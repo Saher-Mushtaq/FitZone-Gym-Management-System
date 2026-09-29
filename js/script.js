@@ -1069,6 +1069,8 @@ function adminLogin() {
         adminPanel.style.display =
             "block";
 
+        setAdminAccess(true);
+
         updateDashboard();
 
     } else {
@@ -1078,6 +1080,8 @@ function adminLogin() {
 
         adminPanel.style.display =
             "none";
+
+        setAdminAccess(false);
 
     }
 
@@ -1108,6 +1112,66 @@ function adminLogout() {
     ).innerHTML =
         "Logged out successfully.";
 
+    setAdminAccess(false);
+
+}
+
+
+// ===============================
+// Admin Access Control
+// ===============================
+
+function setAdminAccess(isLoggedIn) {
+
+    const adminSections = [
+        "members",
+        "attendance",
+        "payments",
+        "trainer-management",
+        "equipment-management"
+    ];
+
+
+    adminSections.forEach(function(id) {
+
+        const section =
+            document.getElementById(id);
+
+        if (section) {
+
+            section.style.display =
+                isLoggedIn ? "" : "none";
+
+        }
+
+
+        const navLink =
+            document.querySelector(
+                'a[href="#' + id + '"]'
+            );
+
+        if (navLink) {
+
+            navLink.style.display =
+                isLoggedIn ? "inline-block" : "none";
+
+        }
+
+    });
+
+
+    const dashboardLink =
+        document.querySelector(
+            'a[href="#dashboard"]'
+        );
+
+    if (dashboardLink) {
+
+        dashboardLink.style.display =
+            isLoggedIn ? "inline-block" : "none";
+
+    }
+
 }
 
 
@@ -1130,6 +1194,8 @@ window.addEventListener(
         loadEquipment();
 
         updateDashboard();
+
+        setAdminAccess(false);
 
     }
 );
