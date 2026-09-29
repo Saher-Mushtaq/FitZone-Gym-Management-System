@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>FitZone Gym</title>
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ===============================
+         ADMIN LOGIN
+    ================================ -->
+
+    <section id="admin-login"
+        class="admin-login-section">
+
+        <h2>
+            Admin <span>Login</span>
+        </h2>
+
+        <div class="login-box">
+
+            <input
+                type="text"
+                id="adminUsername"
+                placeholder="Username">
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Password">
+
+            <button onclick="adminLogin()">
+                Login
+            </button>
+
+            <button
+                onclick="adminLogout()"
+                style="margin-top:10px; background:#333;">
+                Logout
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===============================
+         NAVIGATION
+    ================================ -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                FitZone<span>Gym</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#trainers">Trainers</a>
+                </li>
+
+                <li>
+                    <a href="#trainer-management">
+                        Manage Trainers
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#equipment-management">
+                        Equipment
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#admin-login">
+                        Admin Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pricing">Pricing</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#dashboard">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="#members">Members</a>
+                </li>
+
+                <li>
+                    <a href="#attendance">Attendance</a>
+                </li>
+
+                <li>
+                    <a href="#payments">Payments</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ===============================
+         HOME
+    ================================ -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                BUILD YOUR
+                <span>BEST</span>
+                BODY
+            </h1>
+
+            <p>
+                Transform your body, improve your health,
+                and become stronger with FitZone Gym.
+            </p>
+
+            <a href="#pricing"
+                class="btn">
+                JOIN NOW
+            </a>
+
+        </div>
+
+        <img
+            src="images/gym.jpg"
+            alt="FitZone Gym">
+
+    </section>
+
+
+    <!-- ===============================
+         ABOUT
+    ================================ -->
+
+    <section id="about"
+        class="section">
+
+        <h2>
+            About <span>FitZone</span>
+        </h2>
+
+        <img
+            src="images/equipment.jpg"
+            alt="Gym Equipment">
+
+        <p>
+            FitZone Gym is a modern fitness center
+            designed to help people achieve their
+            fitness goals. We provide quality equipment,
+            professional trainers, and a friendly
+            environment.
+        </p>
+
+    </section>
+
+
+    <!-- ===============================
+         SERVICES
+    ================================ -->
+
+    <section id="services"
+        class="section">
+
+        <h2>
+            Our <span>Services</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Personal Training
+                </h3>
+
+                <p>
+                    Get professional guidance from our
+                    experienced fitness trainers.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Cardio Training
+                </h3>
+
+                <p>
+                    Improve your stamina and cardiovascular
+                    fitness with modern equipment.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Weight Training
+                </h3>
+
+                <p>
+                    Build strength with our complete range
+                    of weight training equipment.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===============================
+         TRAINERS
+    ================================ -->
+
+    <section id="trainers"
+        class="section">
+
+        <h2>
+            Our <span>Trainers</span>
+        </h2>
+
+        <img
+            src="images/trainer.jpg"
+            alt="Fitness Trainer">
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Fitness Trainer
+                </h3>
+
+                <p>
+                    Professional fitness and strength
+                    training.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Cardio Trainer
+                </h3>
+
+                <p>
+                    Specialist in cardio and endurance
+                    training.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Nutrition Coach
+                </h3>
+
+                <p>
+                    Guidance for healthy fitness and
+                    nutrition.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===============================
+         PRICING
+    ================================ -->
+
+    <section id="pricing"
+        class="section">
+
+        <h2>
+            Membership <span>Plans</span>
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Basic
+                </h3>
+
+                <h4>
+                    $20 / Month
+                </h4>
+
+                <p>
+                    Gym Access
+                </p>
+
+                <p>
+                    Cardio Equipment
+                </p>
+
+                <p>
+                    Weight Training
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Premium
+                </h3>
+
+                <h4>
+                    $35 / Month
+                </h4>
+
+                <p>
+                    All Basic Features
+                </p>
+
+                <p>
+                    Personal Training
+                </p>
+
+                <p>
+                    Fitness Guidance
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    VIP
+                </h3>
+
+                <h4>
+                    $50 / Month
+                </h4>
+
+                <p>
+                    All Premium Features
+                </p>
+
+                <p>
+                    Personal Trainer
+                </p>
+
+                <p>
+                    Nutrition Guidance
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===============================
+         CONTACT
+    ================================ -->
+
+    <section id="contact"
+        class="section contact">
+
+        <h2>
+            Contact <span>Us</span>
+        </h2>
+
+        <p>
+            Email: info@fitzonegym.com
+        </p>
+
+        <p>
+            Phone: +92 300 1234567
+        </p>
+
+        <p>
+            Location: Lahore, Pakistan
+        </p>
+
+    </section>
+
+
+    <!-- ===============================
+         MEMBERS MANAGEMENT
+    ================================ -->
+
+    <section id="members"
+        class="members-section">
+
+        <h2>
+            Members <span>Management</span>
+        </h2>
+
+
+        <!-- Search -->
+
+        <div class="member-search">
+
+            <input
+                type="text"
+                id="memberSearch"
+                placeholder="Search Member..."
+                onkeyup="searchMembers()">
+
+        </div>
+
+
+        <!-- Member Form -->
+
+        <div class="member-form">
+
+            <input
+                type="text"
+                id="memberName"
+                placeholder="Member Name">
+
+            <input
+                type="text"
+                id="memberPhone"
+                placeholder="Phone Number">
+
+            <input
+                type="email"
+                id="memberEmail"
+                placeholder="Email Address">
+
+            <select id="memberPlan">
+
+                <option value="">
+                    Select Membership Plan
+                </option>
+
+                <option value="Basic">
+                    Basic
+                </option>
+
+                <option value="Premium">
+                    Premium
+                </option>
+
+                <option value="VIP">
+                    VIP
+                </option>
+
+            </select>
+
+            <button onclick="addMember()">
+                Add Member
+            </button>
+
+        </div>
+
+
+        <!-- Members Table -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Phone</th>
+
+                    <th>Email</th>
+
+                    <th>Plan</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="memberList">
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ===============================
+         DASHBOARD
+    ================================ -->
+
+    <div id="adminPanel"
+        style="display:none;">
+
+        <section id="dashboard"
+            class="dashboard-section">
+
+            <h2>
+                Gym <span>Dashboard</span>
+            </h2>
+
+            <div class="dashboard-cards">
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Total Members
+                    </h3>
+
+                    <p id="totalMembers">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Active Plans
+                    </h3>
+
+                    <p id="activePlans">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Trainers
+                    </h3>
+
+                    <p id="totalTrainers">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Gym Status
+                    </h3>
+
+                    <p>
+                        Active
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Attendance
+                    </h3>
+
+                    <p id="totalAttendance">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Payments
+                    </h3>
+
+                    <p id="totalPayments">
+                        0
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <h3>
+                        Equipment
+                    </h3>
+
+                    <p id="totalEquipment">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- ===============================
+         ATTENDANCE
+    ================================ -->
+
+    <section id="attendance"
+        class="attendance-section">
+
+        <h2>
+            Attendance <span>Management</span>
+        </h2>
+
+        <div class="attendance-form">
+
+            <input
+                type="text"
+                id="attendanceName"
+                placeholder="Member Name">
+
+            <select id="attendanceStatus">
+
+                <option value="">
+                    Select Status
+                </option>
+
+                <option value="Present">
+                    Present
+                </option>
+
+                <option value="Absent">
+                    Absent
+                </option>
+
+            </select>
+
+            <button onclick="markAttendance()">
+                Mark Attendance
+            </button>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Member Name
+                    </th>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="attendanceList">
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ===============================
+         PAYMENTS
+    ================================ -->
+
+    <section id="payments"
+        class="payments-section">
+
+        <h2>
+            Payments <span>Management</span>
+        </h2>
+
+        <div class="payment-form">
+
+            <input
+                type="text"
+                id="paymentMember"
+                placeholder="Member Name">
+
+            <input
+                type="number"
+                id="paymentAmount"
+                placeholder="Amount">
+
+            <select id="paymentPlan">
+
+                <option value="">
+                    Select Plan
+                </option>
+
+                <option value="Basic">
+                    Basic
+                </option>
+
+                <option value="Premium">
+                    Premium
+                </option>
+
+                <option value="VIP">
+                    VIP
+                </option>
+
+            </select>
+
+            <select id="paymentStatus">
+
+                <option value="">
+                    Payment Status
+                </option>
+
+                <option value="Paid">
+                    Paid
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+            </select>
+
+            <button onclick="addPayment()">
+                Add Payment
+            </button>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Member</th>
+
+                    <th>Amount</th>
+
+                    <th>Plan</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="paymentList">
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ===============================
+         TRAINERS MANAGEMENT
+    ================================ -->
+
+    <section id="trainer-management"
+        class="trainer-management-section">
+
+        <h2>
+            Trainers <span>Management</span>
+        </h2>
+
+        <div class="trainer-form">
+
+            <input
+                type="text"
+                id="trainerName"
+                placeholder="Trainer Name">
+
+            <input
+                type="text"
+                id="trainerSpecialization"
+                placeholder="Specialization">
+
+            <select id="trainerAvailability">
+
+                <option value="">
+                    Select Availability
+                </option>
+
+                <option value="Available">
+                    Available
+                </option>
+
+                <option value="Unavailable">
+                    Unavailable
+                </option>
+
+            </select>
+
+            <button onclick="addTrainer()">
+                Add Trainer
+            </button>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Trainer Name
+                    </th>
+
+                    <th>
+                        Specialization
+                    </th>
+
+                    <th>
+                        Availability
+                    </th>
+
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="trainerList">
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ===============================
+         EQUIPMENT MANAGEMENT
+    ================================ -->
+
+    <section id="equipment-management"
+        class="equipment-management-section">
+
+        <h2>
+            Equipment <span>Management</span>
+        </h2>
+
+        <div class="equipment-form">
+
+            <input
+                type="text"
+                id="equipmentName"
+                placeholder="Equipment Name">
+
+            <input
+                type="number"
+                id="equipmentQuantity"
+                placeholder="Quantity">
+
+            <select id="equipmentCondition">
+
+                <option value="">
+                    Select Condition
+                </option>
+
+                <option value="Good">
+                    Good
+                </option>
+
+                <option value="Needs Repair">
+                    Needs Repair
+                </option>
+
+                <option value="Out of Order">
+                    Out of Order
+                </option>
+
+            </select>
+
+            <button onclick="addEquipment()">
+                Add Equipment
+            </button>
+
+        </div>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Equipment
+                    </th>
+
+                    <th>
+                        Quantity
+                    </th>
+
+                    <th>
+                        Condition
+                    </th>
+
+                    <th>
+                        Action
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="equipmentList">
+            </tbody>
+
+        </table>
+
+    </section>
+
+
+    <!-- ===============================
+         FOOTER
+    ================================ -->
+
+    <footer>
+
+        <p>
+            © 2026 FitZone Gym.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
